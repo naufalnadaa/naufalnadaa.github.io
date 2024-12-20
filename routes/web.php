@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\DB;
 |
 */
 
-Route::get('/', [KartuAirSehatController::class, 'emailPage'])->name('email-page');
+Route::get('/index', [KartuAirSehatController::class, 'emailPage'])->name('email-page');
 Route::get('/reload-captcha', [KartuAirSehatController::class, 'reloadCaptcha'])->name('reload-captcha');
 Route::post('/validate-email', [KartuAirSehatController::class, 'validateEmail'])->name('validate-email');
 Route::get('/customer-check', [KartuAirSehatController::class, 'cekDataKonsumen'])->name('check-data-konsumen');
